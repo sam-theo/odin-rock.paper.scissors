@@ -1,11 +1,15 @@
+let player = prompt("Pick: rock, paper or scissors?").toLowerCase();
+let comp = getcomputerchoice();
+alert("You picked "+ player + ", the computer picked "+ comp +" thus " + play(player))
+
 
 function play(player){
     if(player.charAt(0) === "s"){
-        return check(getcomputerchoice(),"p", "r", "s");
+        return check(comp.charAt(0),"p", "r", "s");
     }else if(player.charAt(0) === "p"){
-        return check(getcomputerchoice(),"r", "s", "p");
+        return check(comp.charAt(0),"r", "s", "p");
     }else{
-        return check(getcomputerchoice(),"s", "p", "r");
+        return check(comp.charAt(0),"s", "p", "r");
     }
 }
 
@@ -13,9 +17,9 @@ function check(comp,win,loser,tie){
     if(comp === win){
         return "you win!";
     }else if(comp === loser){
-        return "You loze.";
+        return "you loze.";
     }else{
-        return "It's a tie.";
+        return "it's a tie.";
     }
 }
 
@@ -23,11 +27,11 @@ function getcomputerchoice(){
     let a = Math.floor(Math.random() * 3);
     let b = "";
     if(a === 0){
-        b = "s";
+        b = "scissors";
     }else if(a === 1){
-        b ="r";
+        b ="rock";
     }else{
-        b = "p";
+        b = "paper";
     }
     return b;
 }
