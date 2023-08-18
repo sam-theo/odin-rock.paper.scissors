@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Use viewport height for full height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;/* Spread content vertically */
+    height: 75%; /* Set a specific height for .main */
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5%;
+}
+
+.btn {
+    margin: 10px;
+    width: 30%;
+    height: 100%; /* Adjust height to cover the .buttons container */
+}
+
+#rock {
+    background-color: gray;
+}
+
+#paper {
+    background-color: white;
+}
+
+#scissors {
+    background-color: antiquewhite;
+}
+
+#result {
+    text-align: center;
+    font-size: larger;
+}
+
+.border{
+    border-radius: 2%;
+    border-style: dotted;
+    margin-bottom: 5%;
+    width: 75%;
+    height: 75%;
+    border-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

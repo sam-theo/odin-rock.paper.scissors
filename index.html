@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="javascript.js"></script>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="javascript.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="compWin">Computer: 0/5</div>
+        <div id="playerWin">Player: 0/5</div>
+        <div class="main">
+            <div class="border">
+                <div id="result"> click a button</div>
+            </div>
+            <div class="buttons">
+                <button class="btn" id="rock" onclick="play('rock')">Rock</button>
+                <button class="btn" id="paper" onclick="play('paper')">Paper</button>
+                <button class="btn" id="scissors" onclick="play('scissors')">Scissors</button>
+            </div>
+        </div>
+    </body>
 </html>
